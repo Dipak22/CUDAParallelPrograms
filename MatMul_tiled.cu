@@ -24,7 +24,7 @@ __global__ void matmul(int *A, int *B, int *P){
             B_s[ty][tx] = 0;
         __syncthreads();
 
-        (int k =0;k<TILE_WIDTH; k++)
+        for(int k =0;k<TILE_WIDTH; k++)
             pValue +=A_s[ty][k] * B_s[k][tx];
         __syncthreads();
     }
