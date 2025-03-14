@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+
 #define NUM_BINS (26/4 + 1)
 #define COARSE_FACTOR 3
 __global__ void hist_private(char *str, int *hist, int length){
