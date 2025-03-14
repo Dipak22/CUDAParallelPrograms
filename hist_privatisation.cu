@@ -26,7 +26,7 @@ __global__ void calculate_hist(char *str, int* hist, int length){
 }
 
 int main(){
-    string s = "We are trying to do histogram calculation using thread privatisation";
+    string s = "programming massively parallel processors";
     //string s = "aaaaaa eeeeee zzzzzzz";
 
     int length = s.length();
